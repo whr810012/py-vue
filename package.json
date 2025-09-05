@@ -1,0 +1,36 @@
+{
+  "name": "volunteer-system",
+  "version": "1.0.0",
+  "description": "社区志愿服务系统 - 前后端一体化启动",
+  "main": "start.js",
+  "scripts": {
+    "start": "node start.js",
+    "start:dev": "concurrently \"cd backend && python run.py\" \"cd frontend && npm run serve\"",
+    "start:backend": "cd backend && python run.py",
+    "start:frontend": "cd frontend && npm run serve",
+    "build": "cd frontend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && pip install -r requirements.txt",
+    "clean": "rimraf frontend/node_modules frontend/dist backend/__pycache__ backend/app/__pycache__"
+  },
+  "keywords": [
+    "volunteer",
+    "community",
+    "vue",
+    "flask",
+    "fullstack"
+  ],
+  "author": "开发团队",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "rimraf": "^5.0.1"
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  }
+}
