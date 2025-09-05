@@ -1,0 +1,234 @@
+// 全局样式重置
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #303133;
+  line-height: 1.6;
+}
+
+// 通用工具类
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// 卡片样式
+.card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+// 页面容器
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+// 表单样式
+.form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+// 状态标签样式
+.status-tag {
+  &.active {
+    background-color: #e1f3d8;
+    color: #67c23a;
+  }
+  
+  &.completed {
+    background-color: #f0f9ff;
+    color: #409eff;
+  }
+  
+  &.cancelled {
+    background-color: #fef0f0;
+    color: #f56c6c;
+  }
+  
+  &.registered {
+    background-color: #fdf6ec;
+    color: #e6a23c;
+  }
+  
+  &.checked_in {
+    background-color: #f4f4f5;
+    color: #909399;
+  }
+}
+
+// 活动卡片样式
+.activity-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  }
+  
+  .activity-image {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 48px;
+  }
+  
+  .activity-content {
+    padding: 20px;
+  }
+  
+  .activity-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #303133;
+    margin-bottom: 8px;
+    line-height: 1.4;
+  }
+  
+  .activity-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #606266;
+    
+    .meta-item {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+  }
+  
+  .activity-description {
+    color: #909399;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .activity-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .participant-info {
+      font-size: 14px;
+      color: #606266;
+    }
+  }
+}
+
+// 响应式设计
+@media (max-width: 768px) {
+  .page-container {
+    padding: 0 10px;
+  }
+  
+  .form-container {
+    padding: 20px 10px;
+  }
+  
+  .activity-card {
+    .activity-meta {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  }
+}
+
+// Element Plus 样式覆盖
+.el-button {
+  border-radius: 6px;
+}
+
+.el-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.el-input {
+  .el-input__wrapper {
+    border-radius: 6px;
+  }
+}
+
+.el-textarea {
+  .el-textarea__inner {
+    border-radius: 6px;
+  }
+}

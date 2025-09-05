@@ -1,0 +1,69 @@
+// 主题色彩
+$primary-color: #667eea;
+$primary-light: #8fa4f3;
+$primary-dark: #5a6fd8;
+
+$secondary-color: #764ba2;
+$secondary-light: #9b6bc7;
+$secondary-dark: #634190;
+
+// 功能色彩
+$success-color: #67c23a;
+$warning-color: #e6a23c;
+$danger-color: #f56c6c;
+$info-color: #909399;
+
+// 文字色彩
+$text-primary: #303133;
+$text-regular: #606266;
+$text-secondary: #909399;
+$text-placeholder: #c0c4cc;
+
+// 边框色彩
+$border-base: #dcdfe6;
+$border-light: #e4e7ed;
+$border-lighter: #ebeef5;
+$border-extra-light: #f2f6fc;
+
+// 背景色彩
+$bg-color: #ffffff;
+$bg-page: #f5f7fa;
+$bg-overlay: rgba(0, 0, 0, 0.8);
+
+// 尺寸
+$border-radius-base: 4px;
+$border-radius-small: 2px;
+$border-radius-large: 8px;
+$border-radius-round: 20px;
+
+// 阴影
+$box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+$box-shadow-dark: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.12);
+$box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+
+// 字体
+$font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', '微软雅黑', Arial, sans-serif;
+$font-size-extra-large: 20px;
+$font-size-large: 18px;
+$font-size-medium: 16px;
+$font-size-base: 14px;
+$font-size-small: 13px;
+$font-size-extra-small: 12px;
+
+// 间距
+$spacing-base: 16px;
+$spacing-large: 24px;
+$spacing-small: 8px;
+
+// 断点
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xl: 1920px;
+
+// 渐变
+$gradient-primary: linear-gradient(135deg, #{$primary-color} 0%, #{$secondary-color} 100%);
+$gradient-success: linear-gradient(135deg, #{$success-color} 0%, #85ce61 100%);
+$gradient-warning: linear-gradient(135deg, #{$warning-color} 0%, #ebb563 100%);
+$gradient-danger: linear-gradient(135deg, #{$danger-color} 0%, #f78989 100%);
